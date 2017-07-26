@@ -1,0 +1,124 @@
+{
+  "name": "myLaTeX",
+  "version": "0.0.0",
+  "displayName": "LaTeX language support",
+  "publisher": "torn4dom4n",
+  "description": "LaTeX language support",
+  "repository":{
+    "type": "git",
+    "url": "https://github.com/myEditor/myLaTeX"
+  },
+  "license": "MIT",
+  "icon": "images/myLaTeX-icon.png",
+  "categories": [
+    "Languages",
+    "Snippets"
+  ],
+  "engines": {
+    "atom": "*",
+    "vscode": "*"
+  },
+  "keywords": [
+    "LaTeX"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "bibtex",
+        "aliases": [
+          "Bibtex"
+        ],
+        "extensions": [
+          ".bib"
+        ],
+        "configuration": "./settings/LaTeX.json"
+      },
+      {
+        "id": "latex beamer",
+        "aliases": [
+          "LaTeX Beamer"
+        ],
+        "configuration": "./settings/LaTeX.json"
+      },
+      {
+        "id": "latex log",
+        "aliases": [
+          "LaTeX Log"
+        ],
+        "configuration": "./settings/LaTeX.json"
+      },
+      {
+        "id": "latex memoir",
+        "aliases": [
+          "LaTeX Memoir"
+        ],
+        "configuration": "./settings/LaTeX.json"
+      },
+      {
+        "id": "latex",
+        "aliases": [
+          "LaTeX"
+        ],
+        "extensions": [
+          ".tex"
+        ],
+        "configuration": "./settings/LaTeX.json"
+      },
+      {
+        "id": "tex",
+        "aliases": [
+          "TeX"
+        ],
+        "extensions": [
+          ".sty",
+          ".cls",
+          ".bbx",
+          ".cbx"
+        ],
+        "configuration": "./settings/LaTeX.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "bibtex",
+        "scopeName": "text.bibtex",
+        "path": "./grammars/Bibtex.json"
+      },
+      {
+        "language": "latex beamer",
+        "scopeName": "text.tex.latex.beamer",
+        "path": "./grammars/LaTeX Beamer.json"
+      },
+      {
+        "language": "latex log",
+        "scopeName": "text.log.latex",
+        "path": "./grammars/LaTeX Log.json"
+      },
+      {
+        "language": "latex memoir",
+        "scopeName": "text.tex.latex.memoir",
+        "path": "./grammars/LaTeX Memoir.json"
+      },
+      {
+        "language": "latex",
+        "scopeName": "text.tex.latex",
+        "path": "./grammars/LaTeX.json"
+      },
+      {
+        "language": "tex",
+        "scopeName": "text.tex",
+        "path": "./grammars/Tex.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "latex",
+        "path": "./snippets/LaTeX.json"
+      },
+      {
+        "language": "latex beamer",
+        "path": "./snippets/LaTeX Beamer.json."
+      }
+    ]
+  }
+}

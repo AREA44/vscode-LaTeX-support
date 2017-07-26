@@ -1,0 +1,8 @@
+{
+    ".text.tex.latex.beamer": {
+        "Frame": {
+        "prefix": "frame",
+        "body": "\\begin{frame}[t]{${1:title}}\n\t${0:$TM_SELECTED_TEXT}\n\\end{frame}\n%--- Next Frame ---%"
+        }
+    }
+}
