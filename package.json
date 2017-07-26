@@ -1,10 +1,10 @@
 {
   "name": "myLaTeX",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "displayName": "LaTeX language support",
   "publisher": "torn4dom4n",
   "description": "LaTeX language support",
-  "repository":{
+  "repository": {
     "type": "git",
     "url": "https://github.com/myEditor/myLaTeX"
   },
