@@ -19,7 +19,12 @@
     "vscode": "*"
   },
   "keywords": [
-    "LaTeX"
+    "Bibtex",
+    "LaTeX Beamer",
+    "LaTeX Log",
+    "LaTeX Memoir",
+    "LaTeX",
+    "TeX"
   ],
   "contributes": {
     "languages": [
@@ -60,7 +65,8 @@
           "LaTeX"
         ],
         "extensions": [
-          ".tex"
+          ".tex",
+          ".ltx"
         ],
         "configuration": "./settings/LaTeX.json"
       },
@@ -73,7 +79,9 @@
           ".sty",
           ".cls",
           ".bbx",
-          ".cbx"
+          ".cbx",
+          ".dtx",
+          ".ins"
         ],
         "configuration": "./settings/LaTeX.json"
       }
