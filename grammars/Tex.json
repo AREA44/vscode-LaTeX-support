@@ -3,7 +3,9 @@
     "sty",
     "cls",
     "bbx",
-    "cbx"
+    "cbx",
+    "dtx",
+    "ins"
   ],
   "name": "TeX",
   "patterns": [

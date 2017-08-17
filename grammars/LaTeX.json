@@ -1,6 +1,7 @@
 {
   "fileTypes": [
-    "tex"
+    "tex",
+    "ltx"
   ],
   "firstLineMatch": "^\\\\documentclass(?!.*\\{beamer\\})",
   "name": "LaTeX",
