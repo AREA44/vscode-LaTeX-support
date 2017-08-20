@@ -1,3 +1,6 @@
+# 0.2
+* Added brackets, autoClosingPairs and surroundingPairs
+
 # 0.1.2
 * Added more file extensions
 

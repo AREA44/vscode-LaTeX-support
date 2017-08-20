@@ -32,28 +32,28 @@
         "extensions": [
           ".bib"
         ],
-        "configuration": "./settings/LaTeX.json"
+        "configuration": "./settings/Configuration.json"
       },
       {
         "id": "latex beamer",
         "aliases": [
           "LaTeX Beamer"
         ],
-        "configuration": "./settings/LaTeX.json"
+        "configuration": "./settings/Configuration.json"
       },
       {
         "id": "latex log",
         "aliases": [
           "LaTeX Log"
         ],
-        "configuration": "./settings/LaTeX.json"
+        "configuration": "./settings/Configuration.json"
       },
       {
         "id": "latex memoir",
         "aliases": [
           "LaTeX Memoir"
         ],
-        "configuration": "./settings/LaTeX.json"
+        "configuration": "./settings/Configuration.json"
       },
       {
         "id": "latex",
@@ -64,7 +64,7 @@
           ".tex",
           ".ltx"
         ],
-        "configuration": "./settings/LaTeX.json"
+        "configuration": "./settings/Configuration.json"
       },
       {
         "id": "tex",
@@ -79,7 +79,7 @@
           ".dtx",
           ".ins"
         ],
-        "configuration": "./settings/LaTeX.json"
+        "configuration": "./settings/Configuration.json"
       }
     ],
     "grammars": [
