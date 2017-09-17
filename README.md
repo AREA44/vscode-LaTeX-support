@@ -2,7 +2,7 @@
 
 [![VS Marketplace Version](https://vsmarketplacebadge.apphb.com/version/torn4dom4n.myLaTeX.svg)](https://marketplace.visualstudio.com/items?itemName=torn4dom4n.myLaTeX)
 [![VS Code Installs](https://vsmarketplacebadge.apphb.com/installs/torn4dom4n.myLaTeX.svg)](https://marketplace.visualstudio.com/items?itemName=torn4dom4n.myLaTeX)
-[![Dependencies Status](https://david-dm.org/myEditor/myLaTeX/status.svg)](https://david-dm.org/myEditor/myLaTeX)
+[![Dependencies Status](https://david-dm.org/myEditor/LaTeX-support/status.svg)](https://david-dm.org/myEditor/LaTeX-support)
 
 Adds syntax highlighting and snippets for LaTeX.
 

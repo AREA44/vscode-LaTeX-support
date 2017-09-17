@@ -1,12 +1,12 @@
 {
   "name": "myLaTeX",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "LaTeX language support",
   "publisher": "torn4dom4n",
   "description": "LaTeX language support",
   "repository": {
     "type": "git",
-    "url": "https://github.com/myEditor/myLaTeX"
+    "url": "https://github.com/myEditor/LaTeX-support"
   },
   "license": "MIT",
   "icon": "images/myLaTeX-icon.png",
@@ -15,7 +15,6 @@
     "Snippets"
   ],
   "engines": {
-    "atom": "*",
     "vscode": "*"
   },
   "keywords": [
