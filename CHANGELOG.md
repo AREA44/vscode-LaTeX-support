@@ -1,4 +1,4 @@
-# 1.0.0
+# 1.0.1
 * Only support VS Code
 * More highlight syntax from [language-latex](https://github.com/area/language-latex)
 
