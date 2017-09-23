@@ -1,10 +1,12 @@
 # LaTeX language support
 
-[![VS Marketplace Version](https://vsmarketplacebadge.apphb.com/version/torn4dom4n.myLaTeX.svg)](https://marketplace.visualstudio.com/items?itemName=torn4dom4n.myLaTeX)
-[![VS Code Installs](https://vsmarketplacebadge.apphb.com/installs/torn4dom4n.myLaTeX.svg)](https://marketplace.visualstudio.com/items?itemName=torn4dom4n.myLaTeX)
-[![Dependencies Status](https://david-dm.org/myEditor/LaTeX-support/status.svg)](https://david-dm.org/myEditor/LaTeX-support)
+[![VS Marketplace Version](https://vsmarketplacebadge.apphb.com/version/torn4dom4n.latex-support.svg)](https://marketplace.visualstudio.com/items?itemName=torn4dom4n.latex-support)
+[![VS Code Installs](https://vsmarketplacebadge.apphb.com/installs/torn4dom4n.latex-support.svg)](https://marketplace.visualstudio.com/items?itemName=torn4dom4n.latex-support)
+[![Dependencies Status](https://david-dm.org/ProAdd-ons/LaTeX-support/status.svg)](https://david-dm.org/ProAdd-ons/LaTeX-support)
 
 Adds syntax highlighting and snippets for LaTeX.
+
+![LaTeX Preview](./images/preview.png)
 
 Originally converted from the [LaTeX TextMate bundle](https://github.com/textmate/latex.tmbundle).
 

@@ -1,15 +1,15 @@
 {
-  "name": "myLaTeX",
-  "version": "1.0.1",
+  "name": "latex-support",
+  "version": "1.0.0",
   "displayName": "LaTeX language support",
-  "publisher": "torn4dom4n",
   "description": "LaTeX language support",
   "repository": {
     "type": "git",
-    "url": "https://github.com/myEditor/LaTeX-support"
+    "url": "https://github.com/ProAdd-ons/LaTeX-support"
   },
   "license": "MIT",
-  "icon": "images/myLaTeX-icon.png",
+  "icon": "images/icon.png",
+  "publisher": "torn4dom4n",
   "categories": [
     "Languages",
     "Snippets"
@@ -76,7 +76,8 @@
           ".bbx",
           ".cbx",
           ".dtx",
-          ".ins"
+          ".ins",
+          ".lco"
         ],
         "configuration": "./settings/Configuration.json"
       }
