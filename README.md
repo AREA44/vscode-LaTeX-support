@@ -1,4 +1,4 @@
-# LaTeX language support
+# LaTeX language support for Visual Studio Code
 
 [![VS Marketplace Version](https://vsmarketplacebadge.apphb.com/version/torn4dom4n.latex-support.svg)](https://marketplace.visualstudio.com/items?itemName=torn4dom4n.latex-support)
 [![VS Code Installs](https://vsmarketplacebadge.apphb.com/installs/torn4dom4n.latex-support.svg)](https://marketplace.visualstudio.com/items?itemName=torn4dom4n.latex-support)

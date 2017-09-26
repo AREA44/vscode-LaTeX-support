@@ -5,7 +5,7 @@
   "description": "LaTeX language support",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ProAdd-ons/LaTeX-support"
+    "url": "https://github.com/ProAdd-ons/vscode-LaTeX-support"
   },
   "license": "MIT",
   "icon": "images/icon.png",
