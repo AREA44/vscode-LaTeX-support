@@ -6,7 +6,9 @@
 
 Adds syntax highlighting and snippets for LaTeX.
 
-![LaTeX Preview](./images/preview.png)
+<p align="center">
+  <img alt="LaTeX Preview" src="./images/preview.png">
+</p>
 
 Originally converted from the [LaTeX TextMate bundle](https://github.com/textmate/latex.tmbundle).
 
