@@ -31,28 +31,7 @@
         "extensions": [
           ".bib"
         ],
-        "configuration": "./settings/Configuration.json"
-      },
-      {
-        "id": "latex beamer",
-        "aliases": [
-          "LaTeX Beamer"
-        ],
-        "configuration": "./settings/Configuration.json"
-      },
-      {
-        "id": "latex log",
-        "aliases": [
-          "LaTeX Log"
-        ],
-        "configuration": "./settings/Configuration.json"
-      },
-      {
-        "id": "latex memoir",
-        "aliases": [
-          "LaTeX Memoir"
-        ],
-        "configuration": "./settings/Configuration.json"
+        "configuration": "./settings/configuration.json"
       },
       {
         "id": "latex",
@@ -63,7 +42,7 @@
           ".tex",
           ".ltx"
         ],
-        "configuration": "./settings/Configuration.json"
+        "configuration": "./settings/configuration.json"
       },
       {
         "id": "tex",
@@ -79,29 +58,14 @@
           ".ins",
           ".lco"
         ],
-        "configuration": "./settings/Configuration.json"
+        "configuration": "./settings/configuration.json"
       }
     ],
     "grammars": [
       {
         "language": "bibtex",
         "scopeName": "text.bibtex",
-        "path": "./grammars/Bibtex.json"
-      },
-      {
-        "language": "latex beamer",
-        "scopeName": "text.tex.latex.beamer",
-        "path": "./grammars/LaTeX Beamer.json"
-      },
-      {
-        "language": "latex log",
-        "scopeName": "text.log.latex",
-        "path": "./grammars/LaTeX Log.json"
-      },
-      {
-        "language": "latex memoir",
-        "scopeName": "text.tex.latex.memoir",
-        "path": "./grammars/LaTeX Memoir.json"
+        "path": "./grammars/BibTeX.json"
       },
       {
         "language": "latex",
@@ -111,17 +75,13 @@
       {
         "language": "tex",
         "scopeName": "text.tex",
-        "path": "./grammars/Tex.json"
+        "path": "./grammars/TeX.json"
       }
     ],
     "snippets": [
       {
         "language": "latex",
         "path": "./snippets/LaTeX.json"
-      },
-      {
-        "language": "latex beamer",
-        "path": "./snippets/LaTeX Beamer.json."
       }
     ]
   }

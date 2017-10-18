@@ -49,10 +49,5 @@
     "editor": {
       "foldEndPattern": "^\\s*[)}]\\s*$"
     }
-  },
-  ".text.log.latex": {
-    "editor": {
-      "foldEndPattern": "\\*\\*/|^\\s*\\)"
-    }
   }
 }
