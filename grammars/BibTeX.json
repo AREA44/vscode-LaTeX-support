@@ -1,9 +1,12 @@
 {
-  "comment": "Grammar based on description from http://artis.imag.fr/~Xavier.Decoret/resources/xdkbibtex/bibtex_summary.html#comment\n\t\n\tTODO: Does not support @preamble\n\t",
+  "information_for_contributors": [
+    "Grammar based on description from http://artis.imag.fr/~Xavier.Decoret/resources/xdkbibtex/bibtex_summary.html#comment"
+  ],
+  "name": "BibTeX",
+  "scopeName": "text.bibtex",
   "fileTypes": [
     "bib"
   ],
-  "name": "BibTeX",
   "patterns": [
     {
       "begin": "@Comment",
@@ -245,6 +248,5 @@
         }
       ]
     }
-  },
-  "scopeName": "text.bibtex"
+  }
 }

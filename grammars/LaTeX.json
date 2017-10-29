@@ -1,10 +1,17 @@
 {
+  "name": "LaTeX",
+  "scopeName": "text.tex.latex",
   "fileTypes": [
+    "bbx",
+    "cbx",
+    "cls",
+    "ltx",
+    "lco",
+    "sty",
     "tex",
-    "ltx"
+    "tikz"
   ],
   "firstLineMatch": "^\\\\documentclass(?!.*\\{beamer\\})",
-  "name": "LaTeX",
   "patterns": [
     {
       "comment": "This scope identifies partially typed commands such as `\\tab`. We use this to trigger “Command Completion” only when it makes sense.",
@@ -2610,6 +2617,5 @@
     {
       "include": "text.tex"
     }
-  ],
-  "scopeName": "text.tex.latex"
+  ]
 }

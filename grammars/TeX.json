@@ -1,14 +1,10 @@
 {
-  "fileTypes": [
-    "sty",
-    "cls",
-    "bbx",
-    "cbx",
-    "dtx",
-    "ins",
-    "lco"
-  ],
   "name": "TeX",
+  "scopeName": "text.tex",
+  "fileTypes": [
+    "dtx",
+    "ins"
+  ],
   "patterns": [
     {
       "captures": {
@@ -268,6 +264,5 @@
         }
       ]
     }
-  },
-  "scopeName": "text.tex"
+  }
 }
