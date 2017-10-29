@@ -40,8 +40,14 @@
           "LaTeX"
         ],
         "extensions": [
-          ".tex",
-          ".ltx"
+          "bbx",
+          "cbx",
+          "cls",
+          "ltx",
+          "lco",
+          "sty",
+          "tex",
+          "tikz"
         ],
         "configuration": "./settings/LaTeX-configuration.json"
       },
@@ -51,13 +57,8 @@
           "TeX"
         ],
         "extensions": [
-          ".sty",
-          ".cls",
-          ".bbx",
-          ".cbx",
-          ".dtx",
-          ".ins",
-          ".lco"
+          "dtx",
+          "ins"
         ],
         "configuration": "./settings/TeX-configuration.json"
       }
