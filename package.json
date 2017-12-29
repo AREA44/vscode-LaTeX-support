@@ -1,90 +1,90 @@
 {
-  "name": "latex-support",
-    "version": "1.3.0",
-  "displayName": "LaTeX language support",
-  "description": "LaTeX language support for Visual Studio Code",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ProAdd-ons/vscode-LaTeX-support"
-  },
-  "license": "MIT",
-  "icon": "images/icon.png",
-  "publisher": "torn4dom4n",
-  "categories": [
-    "Languages",
-    "Snippets"
-  ],
-  "engines": {
-    "vscode": "*"
-  },
-  "keywords": [
-    "BibTeX",
-    "LaTeX",
-    "TeX"
-  ],
-  "contributes": {
-    "languages": [
-      {
-        "id": "bibtex",
-        "aliases": [
-          "BibTeX"
-        ],
-        "extensions": [
-          ".bib"
-        ],
-        "configuration": "./settings/BibTeX-configuration.json"
-      },
-      {
-        "id": "latex",
-        "aliases": [
-          "LaTeX"
-        ],
-        "extensions": [
-          "bbx",
-          "cbx",
-          "cls",
-          "ltx",
-          "lco",
-          "sty",
-          "tex",
-          "tikz"
-        ],
-        "configuration": "./settings/LaTeX-configuration.json"
-      },
-      {
-        "id": "tex",
-        "aliases": [
-          "TeX"
-        ],
-        "extensions": [
-          "dtx",
-          "ins"
-        ],
-        "configuration": "./settings/TeX-configuration.json"
-      }
-    ],
-    "grammars": [
-      {
-        "language": "bibtex",
-        "scopeName": "text.bibtex",
-        "path": "./grammars/BibTeX.json"
-      },
-      {
-        "language": "latex",
-        "scopeName": "text.tex.latex",
-        "path": "./grammars/LaTeX.json"
-      },
-      {
-        "language": "tex",
-        "scopeName": "text.tex",
-        "path": "./grammars/TeX.json"
-      }
-    ],
-    "snippets": [
-      {
-        "language": "latex",
-        "path": "./snippets/LaTeX.json"
-      }
-    ]
-  }
+	"name": "latex-support",
+	"version": "1.4.0",
+	"displayName": "LaTeX language support",
+	"description": "LaTeX language support for Visual Studio Code",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ProAdd-ons/vscode-LaTeX-support"
+	},
+	"license": "MIT",
+	"icon": "images/icon.png",
+	"publisher": "torn4dom4n",
+	"categories": [
+		"Languages",
+		"Snippets"
+	],
+	"engines": {
+		"vscode": "*"
+	},
+	"keywords": [
+		"BibTeX",
+		"LaTeX",
+		"TeX"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "bibtex",
+				"aliases": [
+					"BibTeX"
+				],
+				"extensions": [
+					".bib"
+				],
+				"configuration": "./settings/BibTeX-configuration.json"
+			},
+			{
+				"id": "latex",
+				"aliases": [
+					"LaTeX"
+				],
+				"extensions": [
+					"bbx",
+					"cbx",
+					"cls",
+					"ltx",
+					"lco",
+					"sty",
+					"tex",
+					"tikz"
+				],
+				"configuration": "./settings/LaTeX-configuration.json"
+			},
+			{
+				"id": "tex",
+				"aliases": [
+					"TeX"
+				],
+				"extensions": [
+					"dtx",
+					"ins"
+				],
+				"configuration": "./settings/TeX-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "bibtex",
+				"scopeName": "text.bibtex",
+				"path": "./grammars/BibTeX.json"
+			},
+			{
+				"language": "latex",
+				"scopeName": "text.tex.latex",
+				"path": "./grammars/LaTeX.json"
+			},
+			{
+				"language": "tex",
+				"scopeName": "text.tex",
+				"path": "./grammars/TeX.json"
+			}
+		],
+		"snippets": [
+			{
+				"language": "latex",
+				"path": "./snippets/LaTeX.json"
+			}
+		]
+	}
 }

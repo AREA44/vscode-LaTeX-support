@@ -2418,7 +2418,7 @@
         "name": "meta.citation.latex",
         "patterns": [
           {
-            "match": "[!(-z¡-ſ、-ヿΑ-ώА-я一-鿿，．]",
+            "match": "[!\u0028-\u007A\u00A1-\u017F\u3001-\u30FF\u0391-\u03CE\u0410-\u044F\u4E00-\u9FFF\uFF0C\uFF0E]",
             "name": "constant.other.reference.citation.latex"
           }
         ]
@@ -2441,7 +2441,7 @@
         },
         "patterns": [
           {
-            "match": "[!(-z¡-ſ、-ヿΑ-ώА-я一-鿿，．]",
+            "match": "[!\u0028-\u007A\u00A1-\u017F\u3001-\u30FF\u0391-\u03CE\u0410-\u044F\u4E00-\u9FFF\uFF0C\uFF0E]",
             "name": "constant.other.reference.bibitem.latex"
           }
         ]
@@ -2468,7 +2468,7 @@
         "name": "meta.reference.latex",
         "patterns": [
           {
-            "match": "[!(-z¡-ſ、-ヿΑ-ώА-я一-鿿，．]",
+            "match": "[!\u0028-\u007A\u00A1-\u017F\u3001-\u30FF\u0391-\u03CE\u0410-\u044F\u4E00-\u9FFF\uFF0C\uFF0E]",
             "name": "constant.other.reference.latex"
           }
         ]
@@ -2495,8 +2495,47 @@
         "name": "meta.definition.latex",
         "patterns": [
           {
-            "match": "[!(-z¡-ſ、-ヿΑ-ώА-я一-鿿，．]",
+            "match": "[!\u0028-\u007A\u00A1-\u017F\u3001-\u30FF\u0391-\u03CE\u0410-\u044F\u4E00-\u9FFF\uFF0C\uFF0E]",
             "name": "constant.other.reference.latex"
+          }
+        ]
+      },
+      {
+        "begin": "((\\\\)(?:gls|GLS|Gls)(?:disp|link|text|(?:first)?(?:pl(?:ural)?)?|name|symbol|desc|user(?:iv|v?i{0,3}))?)(?:(\\[)[^\\]]*(\\]))?(\\{)",
+        "beginCaptures": {
+          "1": {
+            "name": "keyword.control.gls.latex"
+          },
+          "2": {
+            "name": "punctuation.definition.keyword.latex"
+          },
+          "3": {
+            "name": "punctuation.definition.arguments.optional.begin.latex"
+          },
+          "4": {
+            "name": "punctuation.definition.arguments.optional.end.latex"
+          },
+          "5":{
+            "name": "punctuation.definition.arguments.begin.latex"
+          }
+        },
+        "end": "(\\})(?:(\\[)[^\\]]*(\\]))?",
+        "endCaptures": {
+          "1": {
+            "name": "punctuation.definition.arguments.begin.latex"
+          },
+          "2": {
+            "name": "punctuation.definition.arguments.optional.begin.latex"
+          },
+          "3": {
+            "name": "punctuation.definition.arguments.optional.end.latex"
+          }
+        },
+        "name": "meta.glossaries.latex",
+        "patterns": [
+          {
+            "match": "[!\u0028-\u007A\u00A1-\u017F\u3001-\u30FF\u0391-\u03CE\u0410-\u044F\u4E00-\u9FFF\uFF0C\uFF0E]",
+            "name": "constant.other.glossaries.latex"
           }
         ]
       },
