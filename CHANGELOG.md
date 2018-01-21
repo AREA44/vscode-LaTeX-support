@@ -1,7 +1,11 @@
 # LaTeX language support CHANGELOG
 
+## Version 1.5.0: January 21th, 2018
+* Updated `Folding regions`.
+* Added grammar for `comment` environment adapt [area/language-latex](https://github.com/area/language-latex) in [#166](https://github.com/area/language-latex/pull/166).
+
 ## Version 1.4.0: December 30th, 2017
-* Added grammar for `gls` and `glstext` like commands from [area/language-latex](https://github.com/area/language-latex) in [#160](https://github.com/area/language-latex/pull/160).
+* Added grammar for `gls` and `glstext` adapt [area/language-latex](https://github.com/area/language-latex) in [#160](https://github.com/area/language-latex/pull/160).
 * Fixed `match` is incorrect.
 
 ## Version 1.3.0: November 11th, 2017
