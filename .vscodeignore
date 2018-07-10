@@ -1,4 +1,6 @@
 .vscode
 .gitignore
 .editorconfig
+node_modules
 test
+update-grammar.js
