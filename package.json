@@ -11,8 +11,7 @@
 	"icon": "images/icon.png",
 	"publisher": "torn4dom4n",
 	"categories": [
-		"Languages",
-		"Snippets"
+		"Programming Languages"
 	],
 	"engines": {
 		"vscode": "*"
