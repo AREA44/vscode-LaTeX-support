@@ -107,7 +107,7 @@
 					"name": "punctuation.definition.string.end.tex"
 				}
 			},
-			"name": "string.other.math.block.tex",
+			"name": "support.class.math.block.tex",
 			"patterns": [
 				{
 					"include": "#math"
@@ -134,7 +134,7 @@
 					"name": "punctuation.definition.string.end.tex"
 				}
 			},
-			"name": "string.other.math.tex",
+			"name": "support.class.math.tex",
 			"patterns": [
 				{
 					"match": "\\\\\\$",
