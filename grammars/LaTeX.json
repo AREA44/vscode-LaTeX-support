@@ -79,16 +79,16 @@
 				"2": {
 					"name": "punctuation.definition.function.latex"
 				},
-				"4": {
+				"3": {
 					"name": "punctuation.definition.arguments.optional.begin.latex"
 				},
-				"5": {
+				"4": {
 					"name": "entity.name.section.latex"
 				},
-				"6": {
+				"5": {
 					"name": "punctuation.definition.arguments.optional.end.latex"
 				},
-				"7": {
+				"6": {
 					"name": "punctuation.definition.arguments.begin.latex"
 				}
 			},
@@ -121,6 +121,40 @@
 				}
 			},
 			"patterns": [
+                {
+					"begin": "(((\\\\)begin)(\\{)(lstlisting)(\\})(?:(\\[).*(\\]))?)",
+					"captures": {
+						"1": {
+							"name": "meta.function.embedded.latex"
+						},
+						"2": {
+							"name": "support.function.be.latex"
+						},
+						"3": {
+							"name": "punctuation.definition.function.latex"
+						},
+						"4": {
+							"name": "punctuation.definition.arguments.begin.latex"
+						},
+						"5": {
+							"name": "variable.parameter.function.latex"
+						},
+						"6": {
+							"name": "punctuation.definition.arguments.end.latex"
+						},
+						"7": {
+							"name": "punctuation.definition.arguments.optional.begin.latex"
+						},
+						"8": {
+							"name": "punctuation.definition.arguments.optional.end.latex"
+                        },
+                        "9": {
+							"name": "comment.line.percentage.latex"
+						}
+					},
+					"contentName": "meta.function.embedded.latex",
+					"end": "(((\\\\)end)(\\{)(lstlisting)(\\}))"
+				},
 				{
 					"begin": "(((\\\\)begin)(\\{)(lstlisting)(\\})(?:(\\[).*(\\]))?(\\s*%\\s*(?i:Java)\\n?))",
 					"captures": {
@@ -167,7 +201,7 @@
 							]
 						}
 					]
-				},
+                },
 				{
 					"begin": "(((\\\\)begin)(\\{)(lstlisting)(\\})(?:(\\[).*(\\]))?(\\s*%\\s*(?i:Python)\\n?))",
 					"captures": {
@@ -1849,10 +1883,13 @@
 					"name": "punctuation.definition.arguments.end.latex"
 				}
 			},
-			"contentName": "string.other.math.block.environment.latex",
+			"contentName": "support.class.math.block.environment.latex",
 			"end": "(?x)\n\t\t\t\t\t(?:\\s*)\t\t\t\t\t\t\t\t\t\t# Optional whitespace\n\t\t\t\t\t((\\\\)end)\t\t\t\t\t\t\t\t\t# Marker - Function\n\t\t\t\t\t(\\{)\t\t\t\t\t\t\t\t\t\t# Open Bracket\n\t\t\t\t\t\t(\\4)\t\t\t\t# Previous capture from begin\n\t\t\t\t\t(\\})\t\t\t\t\t\t\t\t\t\t# Close Bracket\n\t\t\t\t\t(?:\\s*\\n)?\t\t\t\t# Match to end of line absent of content\n\t\t\t\t",
 			"name": "meta.function.environment.math.latex",
 			"patterns": [
+                {
+					"include": "text.tex#math"
+				},
 				{
 					"include": "$base"
 				}
@@ -2458,8 +2495,11 @@
 					"name": "punctuation.definition.string.end.latex"
 				}
 			},
-			"name": "string.other.math.latex",
+			"name": "support.class.math.latex",
 			"patterns": [
+                {
+					"include": "text.tex#math"
+				},
 				{
 					"include": "$base"
 				}
@@ -2478,8 +2518,11 @@
 					"name": "punctuation.definition.string.end.latex"
 				}
 			},
-			"name": "string.other.math.latex",
+			"name": "support.class.math.latex",
 			"patterns": [
+                {
+					"include": "text.tex#math"
+				},
 				{
 					"include": "$base"
 				}
