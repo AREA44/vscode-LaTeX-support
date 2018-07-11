@@ -1,0 +1,138 @@
+%This is test for LaTeX syntax
+\documentclass[a4paper,12pt]{article}
+\begin{document}
+
+%Title
+\title{My First Document}
+\author{My Name}
+\date{\today}
+\maketitle
+
+%Sections
+\section{Introduction}
+This is the introduction.
+
+%Labelling
+Referring to section \ref{sec1} on page \pageref{sec1}
+
+%Table of Contents
+\pagenumbering{roman}
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+
+%Font Effects
+\textit{words in italics}
+\textsl{words slanted}
+\textsc{words in smallcaps}
+\textbf{words in bold}
+\texttt{words in teletype}
+\textsf{sans serif words}
+\textrm{roman words}
+\underline{underlined words}
+
+%Coloured Text
+{\color{colour_name}text}
+
+%Font Sizes
+{\tiny tiny words}
+{\scriptsize scriptsize words}
+{\footnotesize footnotesize words}
+{\small small words}
+{\normalsize normalsize words}
+{\large large words}
+{\Large Large words}
+{\LARGE LARGE words}
+{\huge huge words}
+
+%Lists
+\begin{itemize}
+\item[-] First thing
+\item[+] Second thing
+\begin{itemize}
+\item[Fish] A sub-thing
+\item[Plants] Another sub-thing
+\end{itemize}
+\item[Q] Third thing
+\end{itemize}
+
+%Tables
+\begin{tabular}{|l|l|}
+Apples & Green \\
+Strawberries & Red \\
+Oranges & Orange \\
+\end{tabular}
+
+%Figures
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\textwidth]{image}
+\caption{Here is image}
+\label{image}
+\end{figure}
+
+%Mathematical
+$\sin(x)$
+$$\sin(x)$$
+\[\sin(x)\]
+\(\sin(x)\)
+
+\begin{equation}1+2=3\end{equation}
+\begin{eqnarray}
+  a & = & b + c \\
+    & = & y - z
+\end{eqnarray}
+$\alpha$ = α
+$\beta$ = β
+$\delta, \Delta$ = δ, ∆
+$\theta, \Theta$ = θ, Θ
+
+%Comments
+\begin{comment}
+This is a comment.
+\end{comment}
+
+%Lstlistings|Minted
+\lstdefinelanguage{JavaScript}{
+    morestring=[b]`
+}
+
+\lstset{language=JavaScript}
+\begin{lstlisting}
+    let x = `this is a ${string}`
+\end{lstlisting}
+
+\begin{minted}{python}
+import numpy as np
+ 
+def incmatrix(genl1,genl2):
+    m = len(genl1)
+    n = len(genl2)
+    M = None #to become the incidence matrix
+    VT = np.zeros((n*m,1), int)  #dummy variable
+ 
+    #compute the bitwise xor matrix
+    M1 = bitxormatrix(genl1)
+    M2 = np.triu(bitxormatrix(genl2),1) 
+ 
+    for i in range(m-1):
+        for j in range(i+1, m):
+            [r,c] = np.where(M2 == M1[i,j])
+            for k in range(len(r)):
+                VT[(i)*n + r[k]] = 1
+                VT[(i)*n + c[k]] = 1
+                VT[(j)*n + r[k]] = 1
+                VT[(j)*n + c[k]] = 1
+ 
+                if M is None:
+                    M = np.copy(VT)
+                else:
+                    M = np.concatenate((M, VT), 1)
+ 
+                VT = np.zeros((n*m,1), int)
+ 
+    return M
+\end{minted}
+
+\end{document}
+\documentclass{article}
