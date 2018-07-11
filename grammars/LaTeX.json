@@ -1919,10 +1919,6 @@
 			"name": "meta.function.environment.tabular.latex",
 			"patterns": [
 				{
-					"match": "\\\\\\\\",
-					"name": "punctuation.definition.table.row.latex"
-				},
-				{
 					"begin": "(?:^|(?<=\\\\\\\\))(?!\\\\\\\\|\\s*\\\\end\\{(?:tabular|array))",
 					"end": "(?=\\\\\\\\|\\s*\\\\end\\{(?:tabular|array))",
 					"name": "meta.row.environment.tabular.latex",
