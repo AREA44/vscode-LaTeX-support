@@ -11,13 +11,6 @@
 %Sections
 \section{Introduction}
 This is the introduction.
-\section{Methods}
-\subsection{Stage 1}
-The first part of the methods.
-\subsection{Stage 2}
-The second part of the methods.
-\section{Results}
-Here are my results.
 
 %Labelling
 Referring to section \ref{sec1} on page \pageref{sec1}
@@ -69,36 +62,13 @@ Apples & Green \\
 Strawberries & Red \\
 Oranges & Orange \\
 \end{tabular}
-\begin{tabular}{rc}
-Apples & Green \\
-\hline
-Strawberries & Red \\
-\cline{1-1}
-Oranges & Orange \\
-\end{tabular}
-\begin{tabular}{|r|l|}
-\hline
-8 & here’s \\
-\cline{2-2}
-86 & stuff \\
-\hline \hline
-2008 & now \\
-\hline
-\end{tabular}
 
 %Figures
 \begin{figure}[h]
 \centering
-\includegraphics[width=1\textwidth]{myimage}
-\caption{Here is my image}
-\label{image-myimage}
-\end{figure}
-
-%Practical
-\begin{figure}[h!]
-\centering
-\includegraphics[width=1\textwidth]{ImageFilename}
-\caption{My test image}
+\includegraphics[width=1\textwidth]{image}
+\caption{Here is image}
+\label{image}
 \end{figure}
 
 %Mathematical
@@ -119,10 +89,19 @@ $\theta, \Theta$ = θ, Θ
 
 %Comments
 \begin{comment}
-This is a comments.
+This is a comment.
 \end{comment}
 
 %Lstlistings|Minted
+\lstdefinelanguage{JavaScript}{
+    morestring=[b]`
+}
+
+\lstset{language=JavaScript}
+\begin{lstlisting}
+    let x = `this is a ${string}`
+\end{lstlisting}
+
 \begin{minted}{python}
 import numpy as np
  
@@ -154,15 +133,6 @@ def incmatrix(genl1,genl2):
  
     return M
 \end{minted}
-
-\lstdefinelanguage{JavaScript}{
-    morestring=[b]`
-}
-
-\lstset{language=JavaScript}
-\begin{lstlisting}
-    let x = `this is a ${string}`
-\end{lstlisting}
 
 \end{document}
 \documentclass{article}
