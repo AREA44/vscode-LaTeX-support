@@ -1,6 +1,6 @@
 {
 	"name": "latex-support",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"displayName": "LaTeX language support",
 	"description": "LaTeX language support for Visual Studio Code",
 	"repository": {
@@ -9,7 +9,7 @@
 	},
 	"license": "MIT",
 	"icon": "images/icon.png",
-	"publisher": "torn4dom4n",
+	"publisher": "ProAdd-ons",
 	"categories": [
 		"Programming Languages"
 	],
