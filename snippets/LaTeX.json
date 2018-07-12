@@ -2,10 +2,10 @@
     "Align(ed)": {
         "prefix": "ali",
         "body": [
-            "\\begin{align`echo $TM_SELECTED_TEXT|grep math|",
+            "\\begin{align`echo $1|grep math|",
             "sed -e 's/.*math.*/ed/'`}",
-            "\t$0",
-            "\\end{align`echo $TM_SELECTED_TEXT|grep math|",
+            "\t$2",
+            "\\end{align`echo $1|grep math|",
             "sed -e 's/.*math.*/ed/'`}"
         ],
         "desciption": "Align(ed)"
@@ -76,10 +76,10 @@
     "Gather(ed)": {
         "prefix": "gat",
         "body": [
-            "\\begin{gather`echo $TM_SELECTED_TEXT|grep math|",
+            "\\begin{gather`echo $1|grep math|",
             "sed -e 's/.*math.*/ed/'`}",
-            "\t$0",
-            "\\end{gather`echo $TM_SELECTED_TEXT|grep math|",
+            "\t$2",
+            "\\end{gather`echo $1|grep math|",
             "sed -e 's/.*math.*/ed/'`}"
         ],
         "desciption": "Gather(ed)"
