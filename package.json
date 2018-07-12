@@ -29,7 +29,7 @@
 					"BibTeX"
 				],
 				"extensions": [
-					".bib"
+					"bib"
 				],
 				"configuration": "./settings/BibTeX-configuration.json"
 			},
