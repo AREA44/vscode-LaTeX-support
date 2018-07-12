@@ -1,6 +1,6 @@
 {
 	"name": "latex-support",
-	"version": "2.0.1",
+	"version": "2.0.2",
 	"displayName": "LaTeX language support",
 	"description": "LaTeX language support for Visual Studio Code",
 	"repository": {
