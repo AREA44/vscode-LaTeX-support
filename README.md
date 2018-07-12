@@ -4,7 +4,7 @@
 [![VS Code Installs](https://vsmarketplacebadge.apphb.com/installs/ProAdd-ons.latex-support.svg)](https://marketplace.visualstudio.com/items?itemName=ProAdd-ons.latex-support)
 [![Dependencies Status](https://david-dm.org/ProAdd-ons/vscode-LaTeX-support/status.svg)](https://david-dm.org/ProAdd-ons/vscode-LaTeX-support)
 
-This extension adds syntax highlighting and snippets for LaTeX language. Originally converted from the [LaTeX TextMate bundle](https://github.com/textmate/latex.tmbundle). I developed based on [area/language-latex](https://github.com/area/language-latex) and [James-Yu/LaTeX-Workshop](https://github.com/James-Yu/LaTeX-Workshop).
+This extension adds syntax highlighting and snippets for `LaTeX` language. Originally converted from the [LaTeX TextMate bundle](https://github.com/textmate/latex.tmbundle). I developed based on [area/language-latex](https://github.com/area/language-latex) and [James-Yu/LaTeX-Workshop](https://github.com/James-Yu/LaTeX-Workshop).
 
 ![LaTeX Preview](./images/syntax-highlight.png)
 
