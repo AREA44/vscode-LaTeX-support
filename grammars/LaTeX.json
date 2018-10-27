@@ -24,9 +24,6 @@
 				},
 				"5": {
 					"name": "punctuation.definition.arguments.end.latex"
-				},
-				"6": {
-					"name": "punctuation.definition.arguments.begin.latex"
 				}
 			},
 			"contentName": "support.class.latex",
@@ -1799,6 +1796,38 @@
 			"contentName": "markup.raw.verbatim.latex",
 			"end": "((\\\\)end)(\\{)(\\4)(\\})",
 			"name": "meta.function.verbatim.latex"
+        },
+        {
+            "begin": "(?:\\s*)((\\\\)begin)(\\{)(VerbatimOut)(\\})(\\{)([^\\}]*)(\\})",
+            "captures" :{
+                "1": {
+					"name": "support.function.be.latex"
+                },
+				"2": {
+					"name": "punctuation.definition.function.latex"
+				},
+				"3": {
+					"name": "punctuation.definition.arguments.begin.latex"
+				},
+				"4": {
+					"name": "variable.parameter.function.latex"
+				},
+				"5":{
+					"name": "punctuation.definition.arguments.end.latex"
+				},
+				"6": {
+					"name": "punctuation.definition.arguments.begin.latex"
+				},
+				"7": {
+					"name": "support.class.latex"
+				},
+				"8": {
+					"name": "punctuation.definition.arguments.end.latex"
+				}
+            },	
+			"contentName": "markup.raw.verbatim.latex",
+			"end": "((\\\\)end)(\\{)(\\VerbatimOut)(\\})",
+			"name": "meta.function.verbatim.latex"
 		},
 		{
 			"captures": {
@@ -2310,7 +2339,7 @@
 			"end": "\\}",
 			"endCaptures": {
 				"0": {
-					"name": "punctuation.definition.arguments.begin.latex"
+					"name": "punctuation.definition.arguments.end.latex"
 				}
 			},
 			"name": "meta.reference.label.latex",

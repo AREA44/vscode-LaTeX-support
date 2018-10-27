@@ -134,5 +134,19 @@ def incmatrix(genl1,genl2):
     return M
 \end{minted}
 
+\begin{VerbatimOut}{ex-scala-logstage.tmp}
+    class ExampleService(log: IzLogger) {
+      val justAnArg = "example"
+      val justAList = List[Any](10, "green", "bottles")
+      val msec = Random.nextInt(1000)
+      log.trace(s"Argument: $justAnArg, another arg: $justAList")
+      log.info(s"Expr: ${Random.nextInt() -> "number"}")
+      log.warn(s"Hidden: ${Random.nextInt() -> "number" -> null}")
+      val ctxLog = log("userId" -> "user@google.com"
+        , "company" -> "acme")
+      ctxLog.info(s"Processing time: $msec")
+    }
+\end{VerbatimOut}
+
 \end{document}
 \documentclass{article}
