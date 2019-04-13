@@ -1,5 +1,8 @@
 # LaTeX language support CHANGELOG
 
+## Version 3.0.0: April 14th, 2019
+* Current using `LaTeX-Workshop`'s grammar for `LaTeX` language.
+
 ## Version 2.1.0: Octorber 27th, 2018
 * Fixed [VerbatimOut not recognized as a verbatim environment](https://github.com/ProAdd-ons/vscode-LaTeX-support/issues/6).
 
