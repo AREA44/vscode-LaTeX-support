@@ -4,4 +4,4 @@ tests
 .editorconfig
 .gitignore
 package-lock.json
-update-grammar.js
+build
