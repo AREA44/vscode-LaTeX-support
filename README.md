@@ -20,7 +20,7 @@ Read the [CHANGLELOG](https://github.com/ProAdd-ons/vscode-LaTeX-support/blob/ma
 ## Contributing
 
 Contributions are greatly appreciated. Please fork this repository and open a
-pull request to add snippets, make grammar tweaks, etc. Reads [CONTRIBUTING] for detail.
+pull request to add snippets, make grammar tweaks, etc. Reads [CONTRIBUTING](https://github.com/ProAdd-ons/vscode-LaTeX-support/blob/master/CONTRIBUTING.md) for detail.
 
 ## License
 
