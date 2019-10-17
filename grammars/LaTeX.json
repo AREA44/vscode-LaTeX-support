@@ -1,10 +1,10 @@
 {
 	"information_for_contributors": [
-		"This file has been converted from https://github.com/James-Yu/LaTeX-Workshop/blob/master/syntax/LaTeX.plist",
+		"This file has been converted from https://github.com/James-Yu/LaTeX-Workshop/blob/master/syntax/LaTeX.tmLanguage.json",
 		"If you want to provide a fix or improvement, please create a pull request against the original repository.",
 		"Once accepted there, we are happy to receive an update request."
 	],
-	"version": "https://github.com/James-Yu/LaTeX-Workshop/commit/7150df186d310b284d38ded6c18ed17a2a5b2de6",
+	"version": "https://github.com/James-Yu/LaTeX-Workshop/commit/dcdc4918968283945c312b135ef6442ea0d5a975",
 	"name": "LaTeX",
 	"scopeName": "text.tex.latex",
 	"patterns": [
@@ -75,7 +75,7 @@
 			]
 		},
 		{
-			"begin": "(?x)\n\t\t\t\t(\t\t\t\t\t\t\t\t\t\t\t\t\t# Capture 1\n\t\t\t\t\t(\\\\)\t\t\t\t\t\t\t\t\t\t\t# Marker\n\t\t\t\t\t(\n\t\t\t\t\t\t(?:sub){0,2}section\t\t\t\t\t\t\t# Functions\n\t\t\t\t\t  | (?:sub)?paragraph\n\t\t\t\t\t  | chapter|part|addpart\n\t\t\t\t\t  | addchap|addsec|minisec\n\t\t\t\t\t  | frametitle\t\t\t\t\t\t\t\t\t# only for Beamer\n\t\t\t\t\t)\n\t\t\t\t\t(?:\\*)?\t\t\t\t\t\t\t\t\t\t\t# Optional Unnumbered\n\t\t\t\t)\n\t\t\t\t((?:\\[[^\\[]*?\\]){0,2})\n\t\t\t\t(\\{)\t\t\t\t\t\t\t\t\t\t\t\t# Opening Bracket\n\t\t\t\t",
+			"begin": "((\\\\)((?:sub){0,2}section|(?:sub)?paragraph|chapter|part|addpart|addchap|addsec|minisec|frametitle)(?:\\*)?)((?:\\[[^\\[]*?\\]){0,2})(\\{)",
 			"beginCaptures": {
 				"1": {
 					"name": "support.function.section.latex"
@@ -137,10 +137,10 @@
 							]
 						}
 					},
-					"contentName": "source.cpp",
+					"contentName": "source.cpp.embedded.latex",
 					"patterns": [
 						{
-							"include": "source.cpp"
+							"include": "source.cpp.embedded.latex"
 						}
 					],
 					"end": "(\\\\end\\{minted\\})"
@@ -325,8 +325,11 @@
 					]
 				}
 			},
-			"contentName": "source.cpp",
+			"contentName": "source.cpp.embedded.latex",
 			"patterns": [
+				{
+					"include": "source.cpp.embedded.latex"
+				},
 				{
 					"include": "source.cpp"
 				}
@@ -656,7 +659,7 @@
 			"name": "meta.function.end-document.latex"
 		},
 		{
-			"begin": "(?x)\n\t\t\t\t\t(?:\\s*)\t\t\t\t\t\t\t\t\t\t# Optional whitespace\n\t\t\t\t\t((\\\\)begin)\t\t\t\t\t\t\t\t\t# Marker - Function\n\t\t\t\t\t(\\{)\t\t\t\t\t\t\t\t\t\t# Open Bracket\n\t\t\t\t\t\t(\n\t\t\t\t\t\t\t(?:\n\t\t\t\t\t\t\t\talign|equation|(?:IEEE)?eqnarray\t\t\t# Argument\n\t\t\t\t\t\t\t  | multline|aligned|alignat\n\t\t\t\t\t\t\t  | split|gather|gathered\n\t\t\t\t\t\t\t  | cases\n\t\t\t\t\t\t\t  | [a-zA-Z]*matrix\n\t\t\t\t\t\t\t)\n\t\t\t\t\t\t\t(?:\\*)?\t\t\t\t\t\t\t\t# Optional Unnumbered\n\t\t\t\t\t\t)\n\t\t\t\t\t(\\})\t\t\t\t\t\t\t\t\t\t# Close Bracket\n\t\t\t\t\t(\\s*\\n)?\t\t\t\t# Match to end of line absent of content\n\t\t\t\t",
+			"begin": "(?:\\s*)((\\\\)begin)(\\{)((?:align|equation|(?:IEEE)?eqnarray|multline|aligned|alignat|split|gather|gathered|cases|displaymath|[a-zA-Z]*matrix)(?:\\*)?)(\\})(\\s*\\n)?",
 			"captures": {
 				"1": {
 					"name": "support.function.be.latex"
@@ -675,7 +678,7 @@
 				}
 			},
 			"contentName": "support.class.math.block.environment.latex",
-			"end": "(?x)\n\t\t\t\t\t(?:\\s*)\t\t\t\t\t\t\t\t\t\t# Optional whitespace\n\t\t\t\t\t((\\\\)end)\t\t\t\t\t\t\t\t\t# Marker - Function\n\t\t\t\t\t(\\{)\t\t\t\t\t\t\t\t\t\t# Open Bracket\n\t\t\t\t\t\t(\\4)\t\t\t\t# Previous capture from begin\n\t\t\t\t\t(\\})\t\t\t\t\t\t\t\t\t\t# Close Bracket\n\t\t\t\t\t(?:\\s*\\n)?\t\t\t\t# Match to end of line absent of content\n\t\t\t\t",
+			"end": "(?:\\s*)((\\\\)end)(\\{)(\\4)(\\})(?:\\s*\\n)?",
 			"name": "meta.function.environment.math.latex",
 			"patterns": [
 				{
@@ -698,7 +701,7 @@
 			]
 		},
 		{
-			"begin": "(?x)\n\t\t\t\t\t(?:\\s*)\t\t\t\t\t\t\t\t\t\t# Optional whitespace\n\t\t\t\t\t((\\\\)begin)\t\t\t\t\t\t\t\t\t# Marker - Function\n\t\t\t\t\t(\\{)\t\t\t\t\t\t\t\t\t\t# Open Bracket\n\t\t\t\t\t\t(array|tabular[xy*]?|xltabular)\n\t\t\t\t\t(\\})\t\t\t\t\t\t\t\t\t\t# Close Bracket\n\t\t\t\t\t(\\s*\\n)?\t\t\t\t# Match to end of line absent of content\n\t\t\t\t",
+			"begin": "(?:\\s*)((\\\\)begin)(\\{)(array|tabular[xy*]?|xltabular)(\\})(\\s*\\n)?",
 			"captures": {
 				"1": {
 					"name": "support.function.be.latex"
@@ -717,7 +720,7 @@
 				}
 			},
 			"contentName": "meta.data.environment.tabular.latex",
-			"end": "(?x)\n\t\t\t\t\t(?:\\s*)\t\t\t\t\t\t\t\t\t\t# Optional whitespace\n\t\t\t\t\t((\\\\)end)\t\t\t\t\t\t\t\t\t# Marker - Function\n\t\t\t\t\t(\\{)\t\t\t\t\t\t\t\t\t\t# Open Bracket\n\t\t\t\t\t\t(\\4)\t\t\t\t# Previous capture from begin\n\t\t\t\t\t(\\})\t\t\t\t\t\t\t\t\t\t# Close Bracket\n\t\t\t\t\t(?:\\s*\\n)?\t\t\t\t# Match to end of line absent of content\n\t\t\t\t",
+			"end": "(?:\\s*)((\\\\)end)(\\{)(\\4)(\\})(?:\\s*\\n)?",
 			"name": "meta.function.environment.tabular.latex",
 			"patterns": [
 				{
@@ -813,6 +816,28 @@
 					"include": "$base"
 				}
 			]
+		},
+		{
+			"begin": "(?:\\s*)((\\\\)begin)(\\{)(mpost[*]?)(\\})",
+			"captures": {
+				"1": {
+					"name": "support.function.be.latex"
+				},
+				"2": {
+					"name": "punctuation.definition.function.latex"
+				},
+				"3": {
+					"name": "punctuation.definition.arguments.begin.latex"
+				},
+				"4": {
+					"name": "variable.parameter.function.latex"
+				},
+				"5": {
+					"name": "punctuation.definition.arguments.end.latex"
+				}
+			},
+			"end": "((\\\\)end)(\\{)(\\4)(\\})(?:\\s*\\n)?",
+			"name": "meta.function.environment.latex.mpost"
 		},
 		{
 			"begin": "(?:\\s*)((\\\\)begin)(\\{)(\\w+[*]?)(\\})",
@@ -1070,7 +1095,7 @@
 			"name": "meta.scope.item.latex"
 		},
 		{
-			"begin": "(?x)\n\t\t\t\t\t(\n\t\t\t\t\t\t(\\\\)\t\t\t\t\t\t\t\t\t\t# Marker\n\t\t\t\t\t\t(?:auto|foot|full|no|short|text|paren)?\t\t# Function Name\n\t\t\t\t\t\t[cC]ite\n\t\t\t\t\t\t(?:al)?(?:t|p|author|year(?:par)?|title)?[ANP]*\n\t\t\t\t\t\t\\*?\t\t\t\t\t\t\t\t\t\t\t# Optional Unabreviated\n\t\t\t\t\t)\n\t\t\t\t\t(?:(\\[)[^\\]]*(\\]))?\t\t\t\t\t\t\t\t# Optional\n\t\t\t\t\t(?:(\\[)[^\\]]*(\\]))?\t\t\t\t\t\t\t\t#   Arguments\n\t\t\t\t\t(\\{)\t\t\t\t\t\t\t\t\t\t\t# Opening Bracket\n\t\t\t\t",
+			"begin": "((\\\\)(?:auto|foot|full|no|short|text|paren)?[cC]ite(?:al)?(?:p|s|t|author|year(?:par)?|title)?[ANP]*\\*?)((?:(?:\\[[^\\]]*\\]){0,2}\\{[\\w:.]+\\})*)(?:(\\[)[^\\]]*(\\]))?(?:(\\[)[^\\]]*(\\]))?(\\{)",
 			"captures": {
 				"1": {
 					"name": "keyword.control.cite.latex"
@@ -1079,18 +1104,25 @@
 					"name": "punctuation.definition.keyword.latex"
 				},
 				"3": {
-					"name": "punctuation.definition.arguments.optional.begin.latex"
+					"patterns": [
+						{
+							"include": "#autocites-arg"
+						}
+					]
 				},
 				"4": {
-					"name": "punctuation.definition.arguments.optional.end.latex"
-				},
-				"5": {
 					"name": "punctuation.definition.arguments.optional.begin.latex"
 				},
-				"6": {
+				"5": {
 					"name": "punctuation.definition.arguments.optional.end.latex"
 				},
+				"6": {
+					"name": "punctuation.definition.arguments.optional.begin.latex"
+				},
 				"7": {
+					"name": "punctuation.definition.arguments.optional.end.latex"
+				},
+				"8": {
 					"name": "punctuation.definition.arguments.begin.latex"
 				}
 			},
@@ -1390,6 +1422,43 @@
 						}
 					},
 					"match": "(\\[)([^\\[]*?)(\\])"
+				}
+			]
+		},
+		"autocites-arg": {
+			"patterns": [
+				{
+					"captures": {
+						"1": {
+							"name": "punctuation.definition.arguments.optional.begin.latex"
+						},
+						"2": {
+							"name": "punctuation.definition.arguments.optional.end.latex"
+						},
+						"3": {
+							"name": "punctuation.definition.arguments.optional.begin.latex"
+						},
+						"4": {
+							"name": "punctuation.definition.arguments.optional.end.latex"
+						},
+						"5": {
+							"name": "punctuation.definition.arguments.begin.latex"
+						},
+						"6": {
+							"name": "constant.other.reference.citation.latex"
+						},
+						"7": {
+							"name": "punctuation.definition.arguments.end.latex"
+						},
+						"8": {
+							"patterns": [
+								{
+									"include": "#autocites-arg"
+								}
+							]
+						}
+					},
+					"match": "(?:(\\[)[^\\]]*(\\]))?(?:(\\[)[^\\]]*(\\]))?(\\{)([\\w:.]+)(\\})(.*)"
 				}
 			]
 		},

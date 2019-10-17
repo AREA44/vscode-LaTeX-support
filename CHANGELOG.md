@@ -1,5 +1,8 @@
 # LaTeX language support CHANGELOG
 
+## Version 3.1.0: Octorber 17th, 2019
+* Updated grammar.
+
 ## Version 3.0.0: April 14th, 2019
 * Current using `LaTeX-Workshop`'s grammar for `LaTeX` language.
 
