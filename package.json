@@ -5,7 +5,7 @@
     "description": "LaTeX language support for Visual Studio Code",
     "repository": {
         "type": "git",
-        "url": "https://github.com/ProAdd-ons/vscode-LaTeX-support"
+        "url": "https://github.com/AREA44/vscode-LaTeX-support"
     },
     "license": "MIT",
     "icon": "images/icon.png",
