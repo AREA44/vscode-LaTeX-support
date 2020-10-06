@@ -1,5 +1,8 @@
 # LaTeX language support CHANGELOG
 
+## Version 3.3.0: Octorber 6th, 2020
+* Updated grammar from [LaTeX Workshop](https://github.com/James-Yu/LaTeX-Workshop) v8.13.2.
+
 ## Version 3.2.0: April 8th, 2020
 * Updated grammar from [LaTeX Workshop](https://github.com/James-Yu/LaTeX-Workshop) v8.8.0.
 
