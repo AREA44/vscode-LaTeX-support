@@ -4,7 +4,7 @@
 		"If you want to provide a fix or improvement, please create a pull request against the original repository.",
 		"Once accepted there, we are happy to receive an update request."
 	],
-	"version": "https://github.com/James-Yu/LaTeX-Workshop/commit/5874a6c3f2d1fa521bd43331555bdbde84505031",
+	"version": "https://github.com/James-Yu/LaTeX-Workshop/commit/0facc37def4e40dea6352b8bb451dd8850d0569c",
 	"name": "LaTeX",
 	"scopeName": "text.tex.latex",
 	"patterns": [
@@ -743,7 +743,7 @@
 			"name": "meta.function.end-document.latex"
 		},
 		{
-			"begin": "(?:\\s*)((\\\\)begin)(\\{)((?:align|equation|(?:IEEE)?eqnarray|multline|aligned|alignat|split|gather|gathered|cases|displaymath|[a-zA-Z]*matrix)(?:\\*)?)(\\})(\\s*\\n)?",
+			"begin": "(?:\\s*)((\\\\)begin)(\\{)((?:align|equation|(?:IEEE)?eqnarray|multline|aligned|alignat|split|gather|gathered|cases|displaymath|[a-zA-Z]*matrix|(?:(?:arg)?(?:mini|maxi)))(?:\\*|!)?)(\\})(\\s*\\n)?",
 			"captures": {
 				"1": {
 					"name": "support.function.be.latex"
@@ -785,7 +785,7 @@
 			]
 		},
 		{
-			"begin": "(?:\\s*)((\\\\)begin)(\\{)(array|tabular[xy*]?|xltabular)(\\})(\\s*\\n)?",
+			"begin": "(?:\\s*)((\\\\)begin)(\\{)(array|tabular[xy*]?|xltabular|longtable)(\\})(\\s*\\n)?",
 			"captures": {
 				"1": {
 					"name": "support.function.be.latex"
