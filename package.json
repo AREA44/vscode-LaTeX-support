@@ -31,7 +31,7 @@
                 "extensions": [
                     "bib"
                 ],
-                "configuration": "./settings/BibTeX-configuration.json"
+                "configuration": "./settings/configuration.json"
             },
             {
                 "id": "latex",
@@ -43,7 +43,7 @@
                     ".ltx",
                     ".ctx"
                 ],
-                "configuration": "./settings/LaTeX-configuration.json"
+                "configuration": "./settings/configuration.json"
             },
             {
                 "id": "tex",
@@ -56,7 +56,7 @@
                     ".bbx",
                     ".cbx"
                 ],
-                "configuration": "./settings/TeX-configuration.json"
+                "configuration": "./settings/configuration.json"
             }
         ],
         "grammars": [

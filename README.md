@@ -2,7 +2,6 @@
 
 [![VS Marketplace Version](https://vsmarketplacebadge.apphb.com/version/torn4dom4n.latex-support.svg)](https://marketplace.visualstudio.com/items?itemName=torn4dom4n.latex-support)
 [![VS Code Installs](https://vsmarketplacebadge.apphb.com/installs/torn4dom4n.latex-support.svg)](https://marketplace.visualstudio.com/items?itemName=torn4dom4n.latex-support)
-[![Dependencies Status](https://david-dm.org/AREA44/vscode-LaTeX-support/status.svg)](https://david-dm.org/AREA44/vscode-LaTeX-support)
 
 This extension adds syntax highlighting and snippets for `LaTeX` language. I developed based on [LaTeX TextMate bundle](https://github.com/textmate/latex.tmbundle) and [LaTeX Workshop](https://github.com/James-Yu/LaTeX-Workshop).
 
