@@ -1,7 +1,7 @@
 # LaTeX language support CHANGELOG
 ## Version 3.5.0: December 12th, 2020
-* Auto closing pairs with `\left` and `\right`. Fixed [#9](https://github.com/AREA44/vscode-LaTeX-support/issues/9).
-* Removing `$` from auto closing causes bad typing behavior.
+* Auto-closing pairs with `\left` and `\right`. Fixed [#9](https://github.com/AREA44/vscode-LaTeX-support/issues/9).
+* Removed `$` auto-closing causes bad typing behavior.
 * Added GitHub template.
 
 ## Version 3.4.0: November 14th, 2020
