@@ -1,4 +1,7 @@
 # LaTeX language support CHANGELOG
+## Version 3.6.0: March 8th, 2021
+* Updated grammar from [LaTeX Workshop](https://github.com/James-Yu/LaTeX-Workshop) v8.16.1.
+
 ## Version 3.5.0: December 12th, 2020
 * Auto-closing pairs with `\left` and `\right`. Fixed [#9](https://github.com/AREA44/vscode-LaTeX-support/issues/9).
 * Removed `$` auto-closing causes bad typing behavior.

@@ -4,7 +4,7 @@
 		"If you want to provide a fix or improvement, please create a pull request against the original repository.",
 		"Once accepted there, we are happy to receive an update request."
 	],
-	"version": "https://github.com/James-Yu/LaTeX-Workshop/commit/0facc37def4e40dea6352b8bb451dd8850d0569c",
+	"version": "https://github.com/James-Yu/LaTeX-Workshop/commit/27ae12a31bce7d6b1d8ec67096cd9c1c58534399",
 	"name": "LaTeX",
 	"scopeName": "text.tex.latex",
 	"patterns": [
@@ -412,7 +412,7 @@
 			"end": "(\\\\end\\{\\2\\}(?:\\s*\\n)?)"
 		},
 		{
-			"begin": "((?:\\s*)\\\\begin\\{((?:pycode|sageblock|sagesilent|sageverbatim|sageexample|sagecommandline)(?:\\*)?)\\}(?:\\[.*\\])?)",
+			"begin": "((?:\\s*)\\\\begin\\{((?:(?:(?:py|pylab|sympy)(?:code|verbatim|block|concode|console|converbatim))|sageblock|sagesilent|sageverbatim|sageexample|sagecommandline)(?:\\*)?)\\}(?:\\[.*\\])?)",
 			"captures": {
 				"1": {
 					"patterns": [
@@ -1416,6 +1416,53 @@
 			"name": "meta.function.verb.latex"
 		},
 		{
+			"captures": {
+				"1": {
+					"name": "support.function.verb.latex"
+				},
+				"2": {
+					"name": "punctuation.definition.function.latex"
+				},
+				"3": {
+					"patterns": [
+						{
+							"include": "#optional-arg"
+						}
+					]
+				},
+				"4": {
+					"name": "punctuation.definition.verb.latex"
+				},
+				"5": {
+					"name": "source.python",
+					"patterns": [
+						{
+							"include": "source.python"
+						}
+					]
+				},
+				"6": {
+					"name": "punctuation.definition.verb.latex"
+				},
+				"7": {
+					"name": "punctuation.definition.verb.latex"
+				},
+				"8": {
+					"name": "source.python",
+					"patterns": [
+						{
+							"include": "source.python"
+						}
+					]
+				},
+				"9": {
+					"name": "punctuation.definition.verb.latex"
+				}
+			},
+			"match": "((\\\\)(?:py|pycon|pylab|pylabcon|sympy|sympycon)[cv]?)((?:\\[[^\\[]*?\\])?)(?:(?:([^a-zA-Z\\{])(.*?)(\\4))|(?:(\\{)(.*?)(\\})))",
+			"name": "meta.function.verb.latex"
+		},
+		{
 			"match": "\\\\(?:newline|pagebreak|clearpage|linebreak|pause)(?:\\b)",
 			"name": "keyword.control.layout.latex"
 		},
@@ -1633,7 +1680,7 @@
 					"name": "punctuation.definition.arguments.optional.end.latex"
 				}
 			},
-			"match": "(?:\\s*)((\\\\)(?:begin|end))(\\{)([a-z]*code(?:\\*)?|gnuplot|dot2tex|asy|sage[a-z]*)(\\})(?:(\\[).*(\\]))?"
+			"match": "(?:\\s*)((\\\\)(?:begin|end))(\\{)([a-z]+(?:\\*)?)(\\})(?:(\\[).*(\\]))?"
 		},
 		"definition-label": {
 			"begin": "((\\\\)label)(\\{)",
