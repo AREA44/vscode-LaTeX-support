@@ -4,7 +4,7 @@
 		"If you want to provide a fix or improvement, please create a pull request against the original repository.",
 		"Once accepted there, we are happy to receive an update request."
 	],
-	"version": "https://github.com/James-Yu/LaTeX-Workshop/commit/83d1d9392801fcb3fe96d82881ee525bfea0d068",
+	"version": "https://github.com/James-Yu/LaTeX-Workshop/commit/7467c884f116fffa11e2e60d427607dee46217ab",
 	"name": "TeX",
 	"scopeName": "text.tex",
 	"patterns": [
@@ -14,7 +14,7 @@
 					"name": "punctuation.definition.keyword.tex"
 				}
 			},
-			"match": "(\\\\)(backmatter|else|fi|frontmatter|ftrue|mainmatter|if(case|cat|dim|eof|false|hbox|hmode|inner|mmode|num|odd|undefined|vbox|vmode|void|x)?)\\b",
+			"match": "(\\\\)(backmatter|else|fi|frontmatter|mainmatter|if(case|cat|dim|eof|false|hbox|hmode|inner|mmode|num|odd|true|undefined|vbox|vmode|void|x)?)\\b",
 			"name": "keyword.control.tex"
 		},
 		{
