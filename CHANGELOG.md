@@ -2,7 +2,7 @@
 
 ## Version 3.7.0: June 16th, 2021
 * Updated grammar from [LaTeX Workshop](https://github.com/James-Yu/LaTeX-Workshop) v8.19.2.
-* Fixed [snippets for align(ed) and gather(ed)]((https://github.com/AREA44/vscode-LaTeX-support/issues/13)).
+* Fixed [snippets for align(ed) and gather(ed)](https://github.com/AREA44/vscode-LaTeX-support/issues/13).
 
 ## Version 3.6.0: March 8th, 2021
 * Updated grammar from [LaTeX Workshop](https://github.com/James-Yu/LaTeX-Workshop) v8.16.1.
