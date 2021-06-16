@@ -2,11 +2,9 @@
     "Align(ed)": {
         "prefix": "ali",
         "body": [
-            "\\begin{align`echo $1|grep math|",
-            "sed -e 's/.*math.*/ed/'`}",
-            "\t$2",
-            "\\end{align`echo $1|grep math|",
-            "sed -e 's/.*math.*/ed/'`}"
+            "\\begin{align}",
+            "\t$0",
+            "\\end{align}"
         ],
         "desciption": "Align(ed)"
     },
@@ -39,15 +37,6 @@
         ],
         "desciption": "Description"
     },
-    "Display Math — \\[ … \\]": {
-        "prefix": "$$",
-        "body": [
-            "\\[",
-            "\t$TM_SELECTED_TEXT$1",
-            "\\]"
-        ],
-        "desciption": "Display Math"
-    },
     "Enumerate": {
         "prefix": "enum",
         "body": [
@@ -76,11 +65,9 @@
     "Gather(ed)": {
         "prefix": "gat",
         "body": [
-            "\\begin{gather`echo $1|grep math|",
-            "sed -e 's/.*math.*/ed/'`}",
-            "\t$2",
-            "\\end{gather`echo $1|grep math|",
-            "sed -e 's/.*math.*/ed/'`}"
+            "\\begin{gather}",
+            "\t$0",
+            "\\end{gather}"
         ],
         "desciption": "Gather(ed)"
     },
@@ -206,9 +193,13 @@
     "Tabular": {
         "prefix": "tab",
         "body": [
-            "\\\\begin{${1:t}${1/(t)$|(a)$|(.*)/(?1:abular)(?2:rray)/}}{${2:c}}",
-            "$0${2/((?<=[clr])([ |]*(c|l|r)))|./(?1: & )/g}",
-            "\\\\end{${1:t}${1/(t)$|(a)$|(.*)/(?1:abular)(?2:rray)/}}"
+            "\\begin{table}[${1:htbp}]",
+            "\t\\centering\\begin{tabular}{${4:<columns>}}",
+            "\t\t$0",
+            "\t\\end{tabular}",
+            "\t\\caption{${2:<caption>}}",
+            "\t\\label{${3:<label>}}",
+            "\\end{table}"
         ],
         "desciption": "Tabular"
     },
@@ -216,7 +207,7 @@
         "prefix": "begin",
         "body": [
             "\\\\begin{${1:env}}",
-            "\t${1/(enumerate|itemize|list)|(description)|.*/(?1:\\item )(?2:\\item)/}$0",
+            "\t$1",
             "\\\\end{${1:env}}"
         ],
         "desciption": "Begin - End"
