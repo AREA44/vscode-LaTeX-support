@@ -1,7 +1,7 @@
 # LaTeX language support CHANGELOG
 
 ## Version 3.x.x:
-- Fixed [rectify typo in description key](https://github.com/AREA44/vscode-LaTeX-support/pull/15), thanks [@sabertazimi](https://github.com/sabertazimi).
+- Fixed [rectify typo in description key of snippets](https://github.com/AREA44/vscode-LaTeX-support/pull/15), thanks [@sabertazimi](https://github.com/sabertazimi).
 
 ## Version 3.7.0: June 16th, 2021
 - Updated grammar from [LaTeX Workshop](https://github.com/James-Yu/LaTeX-Workshop) v8.19.2.
