@@ -2,7 +2,7 @@
 
 ## Version 3.8.0: July 9th, 2021
 - Fixed [rectify typo in description key of snippets](https://github.com/AREA44/vscode-LaTeX-support/pull/15), thanks to [@sabertazimi](https://github.com/sabertazimi).
-- Fixed [line comment doese not work in `\cite`](https://github.com/AREA44/vscode-LaTeX-support/issues/14).
+- Fixed [line comment does not work in `\cite`](https://github.com/AREA44/vscode-LaTeX-support/issues/14).
 - Updated `TeX` grammar from [LaTeX Workshop](https://github.com/James-Yu/LaTeX-Workshop).
 
 ## Version 3.7.0: June 16th, 2021
