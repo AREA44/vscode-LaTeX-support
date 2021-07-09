@@ -4,7 +4,7 @@
 		"If you want to provide a fix or improvement, please create a pull request against the original repository.",
 		"Once accepted there, we are happy to receive an update request."
 	],
-	"version": "https://github.com/James-Yu/LaTeX-Workshop/commit/7467c884f116fffa11e2e60d427607dee46217ab",
+	"version": "https://github.com/James-Yu/LaTeX-Workshop/commit/913bcf5f04f12c437a9ed1031066499d356d165b",
 	"name": "TeX",
 	"scopeName": "text.tex",
 	"patterns": [
@@ -52,7 +52,7 @@
 						}
 					},
 					"end": "$\\n?",
-					"name": "comment.line.percentage.semicolon.texshop.tex"
+					"name": "comment.line.percentage.tex"
 				},
 				{
 					"begin": "^(%!TEX) (\\S*) =",
@@ -62,7 +62,7 @@
 						}
 					},
 					"end": "$\\n?",
-					"name": "comment.line.percentage.directive.texshop.tex"
+					"name": "comment.line.percentage.directive.tex"
 				},
 				{
 					"begin": "%",
@@ -133,6 +133,35 @@
 	"repository": {
 		"math": {
 			"patterns": [
+				{
+					"begin": "((\\\\)(?:text|mbox))(\\{)",
+					"beginCaptures": {
+						"1": {
+							"name": "constant.other.math.tex"
+						},
+						"2": {
+							"name": "punctuation.definition.function.tex"
+						},
+						"3": {
+							"name": "punctuation.definition.arguments.begin.tex meta.text.normal.tex"
+						}
+					},
+					"contentName": "meta.text.normal.tex",
+					"end": "\\}",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.arguments.end.tex meta.text.normal.tex"
+						}
+					},
+					"patterns": [
+						{
+							"include": "#math"
+						},
+						{
+							"include": "$base"
+						}
+					]
+				},
 				{
 					"captures": {
 						"1": {
