@@ -4,7 +4,7 @@
 		"If you want to provide a fix or improvement, please create a pull request against the original repository.",
 		"Once accepted there, we are happy to receive an update request."
 	],
-	"version": "https://github.com/James-Yu/LaTeX-Workshop/commit/7b2c1ac65c39aebcc76be710e3e6209cfdb03eaa",
+	"version": "https://github.com/James-Yu/LaTeX-Workshop/commit/cf05740fcd5b633c254429b83998da2c93ef5c76",
 	"name": "LaTeX",
 	"scopeName": "text.tex.latex",
 	"patterns": [
@@ -1290,6 +1290,17 @@
 			},
 			"name": "meta.citation.latex",
 			"patterns": [
+				{
+					"captures": {
+						"1": {
+							"name": "comment.line.percentage.tex"
+						},
+						"2": {
+							"name": "punctuation.definition.comment.tex"
+						}
+					},
+					"match": "((%).*)$"
+				},
 				{
 					"match": "[\\w:.]+",
 					"name": "constant.other.reference.citation.latex"
