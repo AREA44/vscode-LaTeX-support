@@ -1,6 +1,6 @@
 {
     "name": "latex-support",
-    "version": "3.8.0",
+    "version": "3.9.0",
     "displayName": "LaTeX language support",
     "description": "LaTeX language support for Visual Studio Code",
     "repository": {
@@ -29,7 +29,7 @@
                     "BibTeX"
                 ],
                 "extensions": [
-                    "bib"
+                    ".bib"
                 ],
                 "configuration": "./settings/configuration.json"
             },
