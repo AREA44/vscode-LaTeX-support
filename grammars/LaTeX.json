@@ -4,7 +4,7 @@
 		"If you want to provide a fix or improvement, please create a pull request against the original repository.",
 		"Once accepted there, we are happy to receive an update request."
 	],
-	"version": "https://github.com/James-Yu/LaTeX-Workshop/commit/cf05740fcd5b633c254429b83998da2c93ef5c76",
+	"version": "https://github.com/James-Yu/LaTeX-Workshop/commit/2b5f56667f049dae2b17fde37ed2c12a42505c98",
 	"name": "LaTeX",
 	"scopeName": "text.tex.latex",
 	"patterns": [
@@ -108,6 +108,40 @@
 				},
 				{
 					"include": "$base"
+				}
+			]
+		},
+		{
+			"name": "meta.function.environment.songs.latex",
+			"begin": "((?:\\s*)\\\\begin\\{songs\\}\\{.*\\})",
+			"end": "(\\\\end\\{songs\\}(?:\\s*\\n)?)",
+			"captures": {
+				"1": {
+					"patterns": [
+						{
+							"include": "#env-mandatory-arg"
+						}
+					]
+				}
+			},
+			"contentName": "meta.data.environment.songs.latex",
+			"patterns": [
+				{
+					"name": "meta.chord.block.latex support.class.chord.block.environment.latex",
+					"begin": "\\\\\\[",
+					"end": "\\]",
+					"patterns": [
+						{
+							"include": "$base"
+						}
+					]
+				},
+				{
+					"name": "meta.chord.block.latex support.class.chord.block.environment.latex",
+					"match": "\\^"
+				},
+				{
+					"include": "$self"
 				}
 			]
 		},
@@ -605,7 +639,7 @@
 			"end": "\\s*(\\};)"
 		},
 		{
-			"begin": "(?:\\s*)((\\\\)begin)(\\{)((?:fboxv|boxedv|V|v)erbatim\\*?)(\\})",
+			"begin": "(?:\\s*)((\\\\)begin)(\\{)((?:fboxv|boxedv|V|v|spv)erbatim\\*?)(\\})",
 			"captures": {
 				"1": {
 					"name": "support.function.be.latex"
@@ -1365,7 +1399,7 @@
 			"include": "#definition-label"
 		},
 		{
-			"begin": "((\\\\)[vV]erb[\\*]?)\\s*((\\\\)scantokens)(\\{)",
+			"begin": "((\\\\)(?:verb|Verb|spverb)\\*?)\\s*((\\\\)scantokens)(\\{)",
 			"beginCaptures": {
 				"1": {
 					"name": "support.function.verb.latex"
@@ -1415,7 +1449,7 @@
 					"name": "punctuation.definition.verb.latex"
 				}
 			},
-			"match": "((\\\\)[vV]erb[\\*]?)\\s*((?<=\\s)\\S|[^a-zA-Z])(.*?)(\\3|$)",
+			"match": "((\\\\)(?:verb|Verb|spverb)\\*?)\\s*((?<=\\s)\\S|[^a-zA-Z])(.*?)(\\3|$)",
 			"name": "meta.function.verb.latex"
 		},
 		{
