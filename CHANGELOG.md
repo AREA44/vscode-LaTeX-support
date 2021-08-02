@@ -1,7 +1,7 @@
 # LaTeX language support CHANGELOG
 
 ## Version 3.9.0: August 1st, 2021
-- [Highlight `spverbatim`](https://github.com/AREA44/vscode-LaTeX-support/issues/16).
+- [Highlighted `spverbatim`](https://github.com/AREA44/vscode-LaTeX-support/issues/16).
 - Updated `LaTeX` and `TeX` from [LaTeX Workshop](https://github.com/James-Yu/LaTeX-Workshop).
 
 ## Version 3.8.0: July 9th, 2021
