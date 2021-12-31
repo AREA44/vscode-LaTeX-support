@@ -1,10 +1,10 @@
 {
 	"information_for_contributors": [
-		"This file has been converted from https://github.com/James-Yu/LaTeX-Workshop/blob/master/syntax/Bibtex.tmLanguage.json",
+		"This file has been converted from https://github.com/jlelong/vscode-latex-basics/blob/master/syntaxes/Bibtex.tmLanguage.json",
 		"If you want to provide a fix or improvement, please create a pull request against the original repository.",
 		"Once accepted there, we are happy to receive an update request."
 	],
-	"version": "https://github.com/James-Yu/LaTeX-Workshop/commit/630782c1401ec8b34b67129af2443caa0ed78b39",
+	"version": "https://github.com/jlelong/vscode-latex-basics/commit/45cf7d1b88b959dcb16bccf60da7ef4494c1acc9",
 	"name": "BibTeX",
 	"scopeName": "text.bibtex",
 	"comment": "Grammar based on description from http://artis.imag.fr/~Xavier.Decoret/resources/xdkbibtex/bibtex_summary.html#comment\n\t\n\tTODO: Does not support @preamble\n\t",

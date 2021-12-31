@@ -1,10 +1,10 @@
 {
 	"information_for_contributors": [
-		"This file has been converted from https://github.com/James-Yu/LaTeX-Workshop/blob/master/syntax/LaTeX.tmLanguage.json",
+		"This file has been converted from https://github.com/jlelong/vscode-latex-basics/blob/master/syntaxes/LaTeX.tmLanguage.json",
 		"If you want to provide a fix or improvement, please create a pull request against the original repository.",
 		"Once accepted there, we are happy to receive an update request."
 	],
-	"version": "https://github.com/James-Yu/LaTeX-Workshop/commit/ec1f5a778146973d5383acf08cf0670af6532a22",
+	"version": "https://github.com/jlelong/vscode-latex-basics/commit/e1bb99ae10eae344e7c72f5b17e81ff7377991c4",
 	"name": "LaTeX",
 	"scopeName": "text.tex.latex",
 	"patterns": [
@@ -400,7 +400,7 @@
 					},
 					"contentName": "meta.function.embedded.latex",
 					"end": "(\\\\end\\{(?:lstlisting|minted|pyglist)\\})",
-					"name": "meta.embedded.block.generic"
+					"name": "meta.embedded.block.generic.latex"
 				}
 			]
 		},
@@ -891,7 +891,7 @@
 			]
 		},
 		{
-			"begin": "(?:\\s*)((\\\\)begin)(\\{)(tabular[xy*]?|xltabular|longtable|(?:long)?tabu|tblr)(\\})(\\s*\\n)?",
+			"begin": "(?:\\s*)((\\\\)begin)(\\{)(tabular[xy*]?|xltabular|longtable|(?:long)?tabu|(?:long|tall)?tblr|NiceTabular[X*]?)(\\})(\\s*\\n)?",
 			"captures": {
 				"1": {
 					"name": "support.function.be.latex"
@@ -1694,6 +1694,33 @@
 				}
 			},
 			"name": "meta.math.block.latex support.class.math.block.environment.latex",
+			"patterns": [
+				{
+					"match": "\\\\\\$",
+					"name": "constant.character.escape.latex"
+				},
+				{
+					"include": "text.tex#math"
+				},
+				{
+					"include": "$base"
+				}
+			]
+		},
+		{
+			"begin": "\\$",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.begin.tex"
+				}
+			},
+			"end": "\\$",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.end.tex"
+				}
+			},
+			"name": "meta.math.block.tex support.class.math.block.tex",
 			"patterns": [
 				{
 					"match": "\\\\\\$",

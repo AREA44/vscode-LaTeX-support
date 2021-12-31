@@ -1,5 +1,9 @@
 # LaTeX language support CHANGELOG
 
+## Version 4.0.0: December 31th, 2021
+- Updated `LaTeX` grammar from [VSCode LaTeX grammars](https://github.com/jlelong/vscode-latex-basics).
+- Only support VSCode < 1.64. From 1.64, VSCode supported `LaTeX` grammar.
+
 ## Version 3.10.0: October 16th, 2021
 - Updated `LaTeX` grammar from [LaTeX Workshop](https://github.com/James-Yu/LaTeX-Workshop).
 
