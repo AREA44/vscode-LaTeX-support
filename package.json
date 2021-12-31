@@ -14,7 +14,7 @@
         "Programming Languages"
     ],
     "engines": {
-        "vscode": "<1.64"
+        "vscode": "1.63.0"
     },
     "keywords": [
         "BibTeX",
